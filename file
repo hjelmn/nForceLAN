@@ -1,0 +1,477 @@
+
+=== BUILD NATIVE TARGET nForceLAN OF PROJECT nForceLAN WITH THE DEFAULT CONFIGURATION (Release) ===
+Check dependencies
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/forcedeth.o forcedeth.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fno-exceptions -fno-rtti -fcheck-new -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -fapple-kext -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/i386 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/forcedeth.o
+
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp: In member function 'virtual bool nForceLAN::init(OSDictionary*)':
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:161: warning: format '%d' expects type 'int', but argument 4 has type 'UInt32'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:161: warning: format '%d' expects type 'int', but argument 3 has type 'UInt32'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp: In member function 'bool nForceLAN::allocateDescriptor(io_rings*, IOPhysicalAddress*, UInt32)':
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:697: warning: 'IOMallocContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:116)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:697: warning: 'IOMallocContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:116)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:708: warning: 'IOMallocContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:116)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:708: warning: 'IOMallocContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:116)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp: In member function 'void nForceLAN::deallocateDescriptor(io_rings*, UInt32)':
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:724: warning: 'IOFreeContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:124)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:724: warning: 'IOFreeContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:124)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:727: warning: 'IOFreeContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:124)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:727: warning: 'IOFreeContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:124)
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/forcedeth-helper.o forcedeth-helper.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fno-exceptions -fno-rtti -fcheck-new -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -fapple-kext -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/i386 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/forcedeth-helper.o
+
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp: In member function 'bool nForceLAN::updateLinkSpeed()':
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp:406: warning: format '%x' expects type 'unsigned int', but argument 7 has type 'UInt32'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp:406: warning: format '%x' expects type 'unsigned int', but argument 6 has type 'UInt32'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp: In member function 'bool nForceLAN::initRx()':
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp:663: warning: 'IOMallocContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:116)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp:663: warning: 'IOMallocContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:116)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp: In member function 'bool nForceLAN::releaseRingEntry(io_rings*, int)':
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp:710: warning: 'IOFreeContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:124)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp:710: warning: 'IOFreeContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:124)
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/forcedeth_probe.o forcedeth_probe.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fno-exceptions -fno-rtti -fcheck-new -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -fapple-kext -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/i386 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_probe.cpp -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/forcedeth_probe.o
+
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_probe.cpp: In member function 'bool nForceLAN::deviceDetect()':
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_probe.cpp:408: warning: format '%08x' expects type 'unsigned int', but argument 7 has type 'UInt32'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_probe.cpp:408: warning: format '%08x' expects type 'unsigned int', but argument 6 has type 'UInt32'
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/forcedeth_phy.o forcedeth_phy.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fno-exceptions -fno-rtti -fcheck-new -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -fapple-kext -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/i386 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/forcedeth_phy.o
+
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp: In member function 'int nForceLAN::phyInit()':
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:335: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:336: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:342: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:347: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:352: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:354: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:359: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:361: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:366: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:368: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:369: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:374: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:376: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:381: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:386: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:388: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:389: warning: deprecated conversion from string constant to 'char*'
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/forcedeth_power.o forcedeth_power.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fno-exceptions -fno-rtti -fcheck-new -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -fapple-kext -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/i386 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_power.cpp -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/forcedeth_power.o
+
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/forcedeth_events.o forcedeth_events.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fno-exceptions -fno-rtti -fcheck-new -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -fapple-kext -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/i386 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_events.cpp -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/forcedeth_events.o
+
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/nForceLAN_info.o build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/nForceLAN_info.c normal i386 c com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/i386 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/nForceLAN_info.c -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/nForceLAN_info.o
+
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/forcedeth.o forcedeth.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fno-exceptions -fno-rtti -fcheck-new -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -fapple-kext -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/x86_64 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/forcedeth.o
+
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp: In member function 'bool nForceLAN::allocateDescriptor(io_rings*, IOPhysicalAddress*, UInt32)':
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:697: warning: 'IOMallocContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:116)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:697: warning: 'IOMallocContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:116)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:708: warning: 'IOMallocContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:116)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:708: warning: 'IOMallocContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:116)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp: In member function 'void nForceLAN::deallocateDescriptor(io_rings*, UInt32)':
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:724: warning: 'IOFreeContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:124)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:724: warning: 'IOFreeContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:124)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:727: warning: 'IOFreeContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:124)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth.cpp:727: warning: 'IOFreeContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:124)
+Ld build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/nForceLAN normal i386
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv MACOSX_DEPLOYMENT_TARGET 10.6
+    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -filelist /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/nForceLAN.LinkFileList -mmacosx-version-min=10.6 -lcpp_kext -Xlinker -kext -nostdlib -lkmodc++ /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/nForceLAN_info.o -lkmod -lcc_kext -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/nForceLAN
+
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/forcedeth-helper.o forcedeth-helper.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fno-exceptions -fno-rtti -fcheck-new -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -fapple-kext -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/x86_64 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/forcedeth-helper.o
+
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp: In member function 'bool nForceLAN::initRx()':
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp:663: warning: 'IOMallocContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:116)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp:663: warning: 'IOMallocContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:116)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp: In member function 'bool nForceLAN::releaseRingEntry(io_rings*, int)':
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp:710: warning: 'IOFreeContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:124)
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth-helper.cpp:710: warning: 'IOFreeContiguous' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/IOLib.h:124)
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/forcedeth_probe.o forcedeth_probe.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fno-exceptions -fno-rtti -fcheck-new -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -fapple-kext -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/x86_64 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_probe.cpp -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/forcedeth_probe.o
+
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/forcedeth_phy.o forcedeth_phy.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fno-exceptions -fno-rtti -fcheck-new -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -fapple-kext -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/x86_64 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/forcedeth_phy.o
+
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp: In member function 'int nForceLAN::phyInit()':
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:335: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:336: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:342: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:347: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:352: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:354: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:359: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:361: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:366: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:368: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:369: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:374: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:376: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:381: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:386: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:388: warning: deprecated conversion from string constant to 'char*'
+/Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_phy.cpp:389: warning: deprecated conversion from string constant to 'char*'
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/forcedeth_power.o forcedeth_power.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fno-exceptions -fno-rtti -fcheck-new -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -fapple-kext -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/x86_64 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_power.cpp -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/forcedeth_power.o
+
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/forcedeth_events.o forcedeth_events.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -fno-exceptions -fno-rtti -fcheck-new -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -fapple-kext -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/x86_64 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/forcedeth_events.cpp -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/forcedeth_events.o
+
+CompileC build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/nForceLAN_info.o build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/nForceLAN_info.c normal x86_64 c com.apple.compilers.gcc.4_2
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv LANG en_US.US-ASCII
+    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -nostdinc -fno-builtin -Wno-trigraphs -force_cpusubtype_ALL -msoft-float -Os -fno-common -mkernel -finline -fno-keep-inline-functions -Wreturn-type -Wunused-variable -DKERNEL -DKERNEL_PRIVATE -DDRIVER_PRIVATE -DAPPLE -DNeXT -isysroot /Developer/SDKs/MacOSX10.6.sdk -msse3 -mmacosx-version-min=10.6 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN.hmap -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include -I/System/Library/Frameworks/Kernel.framework/PrivateHeaders -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/x86_64 -I/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources/nForceLAN_info.c -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/nForceLAN_info.o
+
+Ld build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/nForceLAN normal x86_64
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv MACOSX_DEPLOYMENT_TARGET 10.6
+    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -F/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release -filelist /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/nForceLAN.LinkFileList -mmacosx-version-min=10.6 -lcpp_kext -Xlinker -kext -nostdlib -lkmodc++ /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/nForceLAN_info.o -lkmod -lcc_kext -o /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/nForceLAN
+
+CreateUniversalBinary build/Release/nForceLAN.kext/Contents/MacOS/nForceLAN normal "i386 x86_64"
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    /usr/bin/lipo -create /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/nForceLAN /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/nForceLAN -output /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/nForceLAN.kext/Contents/MacOS/nForceLAN
+
+PhaseScriptExecution "Run Script" build/nForceLAN.build/Release/nForceLAN.build/Script-63F711E709D62B9900BF76F1.sh
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv ACTION build
+    setenv ALTERNATE_GROUP staff
+    setenv ALTERNATE_MODE u+w,go-w,a+rX
+    setenv ALTERNATE_OWNER hjelmn
+    setenv ALWAYS_SEARCH_USER_PATHS YES
+    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer
+    setenv APPLE_INTERNAL_DIR /AppleInternal
+    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation
+    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library
+    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools
+    setenv APPLY_RULES_IN_COPY_FILES NO
+    setenv ARCHS "i386 x86_64"
+    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"
+    setenv ARCHS_STANDARD_32_BIT "i386 ppc"
+    setenv ARCHS_STANDARD_64_BIT x86_64
+    setenv BUILD_COMPONENTS "headers build"
+    setenv BUILD_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build
+    setenv BUILD_ROOT /Users/hjelmn/Desktop/nForceLAN_0.62.13/build
+    setenv BUILD_STYLE Release
+    setenv BUILD_VARIANTS normal
+    setenv BUILT_PRODUCTS_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release
+    setenv CACHE_ROOT /var/folders/+9/+98P9C3aGOy4hASUXQFZ-k+++TI/-Caches-/com.apple.Xcode.501
+    setenv CCHROOT /var/folders/+9/+98P9C3aGOy4hASUXQFZ-k+++TI/-Caches-/com.apple.Xcode.501
+    setenv CHMOD /bin/chmod
+    setenv CHOWN /usr/sbin/chown
+    setenv CLASS_FILE_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/JavaClasses
+    setenv CLEAN_PRECOMPS YES
+    setenv CLONE_HEADERS NO
+    setenv CODESIGNING_FOLDER_PATH /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/nForceLAN.kext
+    setenv CODE_SIGNING_ALLOWED YES
+    setenv COMMAND_MODE legacy
+    setenv COMPOSITE_SDK_DIRS /var/folders/+9/+98P9C3aGOy4hASUXQFZ-k+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs
+    setenv CONFIGURATION Release
+    setenv CONFIGURATION_BUILD_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release
+    setenv CONFIGURATION_TEMP_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release
+    setenv CONTENTS_FOLDER_PATH nForceLAN.kext/Contents
+    setenv COPYING_PRESERVES_HFS_DATA NO
+    setenv COPY_PHASE_STRIP YES
+    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES
+    setenv CP /bin/cp
+    setenv CURRENT_ARCH x86_64
+    setenv CURRENT_PROJECT_VERSION 0.62.14
+    setenv CURRENT_VARIANT normal
+    setenv DEAD_CODE_STRIPPING NO
+    setenv DEBUGGING_SYMBOLS YES
+    setenv DEBUG_INFORMATION_FORMAT dwarf
+    setenv DEPLOYMENT_LOCATION NO
+    setenv DEPLOYMENT_POSTPROCESSING NO
+    setenv DERIVED_FILES_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources
+    setenv DERIVED_FILE_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources
+    setenv DERIVED_SOURCES_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/DerivedSources
+    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications
+    setenv DEVELOPER_BIN_DIR /Developer/usr/bin
+    setenv DEVELOPER_DIR /Developer
+    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks
+    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""
+    setenv DEVELOPER_LIBRARY_DIR /Developer/Library
+    setenv DEVELOPER_SDK_DIR /Developer/SDKs
+    setenv DEVELOPER_TOOLS_DIR /Developer/Tools
+    setenv DEVELOPER_USR_DIR /Developer/usr
+    setenv DEVELOPMENT_LANGUAGE English
+    setenv DOCUMENTATION_FOLDER_PATH /Documentation
+    setenv DO_HEADER_SCANNING_IN_JAM NO
+    setenv DSTROOT /tmp/nForceLAN.dst
+    setenv DWARF_DSYM_FILE_NAME nForceLAN.kext.dSYM
+    setenv DWARF_DSYM_FOLDER_PATH /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release
+    setenv ENABLE_APPLE_KEXT_CODE_GENERATION YES
+    setenv ENABLE_HEADER_DEPENDENCIES YES
+    setenv ENABLE_OPENMP_SUPPORT NO
+    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"
+    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"
+    setenv EXECUTABLES_FOLDER_PATH nForceLAN.kext/Contents/Executables
+    setenv EXECUTABLE_FOLDER_PATH nForceLAN.kext/Contents/MacOS
+    setenv EXECUTABLE_NAME nForceLAN
+    setenv EXECUTABLE_PATH nForceLAN.kext/Contents/MacOS/nForceLAN
+    setenv FILE_LIST /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects/LinkFileList
+    setenv FIXED_FILES_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/FixedFiles
+    setenv FRAMEWORKS_FOLDER_PATH nForceLAN.kext/Contents/Frameworks
+    setenv FRAMEWORK_FLAG_PREFIX -framework
+    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release\" "
+    setenv FRAMEWORK_VERSION A
+    setenv FULL_PRODUCT_NAME nForceLAN.kext
+    setenv GCC3_VERSION 3.3
+    setenv GCC_AUTO_VECTORIZATION NO
+    setenv GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW YES
+    setenv GCC_CW_ASM_SYNTAX NO
+    setenv GCC_DISABLE_STATIC_FUNCTION_INLINING YES
+    setenv GCC_ENABLE_BUILTIN_FUNCTIONS NO
+    setenv GCC_ENABLE_CPP_EXCEPTIONS NO
+    setenv GCC_ENABLE_CPP_RTTI NO
+    setenv GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS YES
+    setenv GCC_ENABLE_FUNCTION_INLINING YES
+    setenv GCC_ENABLE_KERNEL_DEVELOPMENT YES
+    setenv GCC_ENABLE_PASCAL_STRINGS NO
+    setenv GCC_ENABLE_SSE3_EXTENSIONS YES
+    setenv GCC_FAST_OBJC_DISPATCH NO
+    setenv GCC_FORCE_CPU_SUBTYPE_ALL YES
+    setenv GCC_GENERATE_DEBUGGING_SYMBOLS NO
+    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO
+    setenv GCC_NO_COMMON_BLOCKS YES
+    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"
+    setenv GCC_PRODUCT_TYPE_PREPROCESSOR_DEFINITIONS " KERNEL KERNEL_PRIVATE DRIVER_PRIVATE APPLE NeXT"
+    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO
+    setenv GCC_USE_STANDARD_INCLUDE_SEARCHING NO
+    setenv GCC_VERSION 4.2
+    setenv GCC_WARN_ABOUT_RETURN_TYPE YES
+    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO
+    setenv GCC_WARN_UNUSED_VARIABLE YES
+    setenv GENERATE_MASTER_OBJECT_FILE NO
+    setenv GENERATE_PKGINFO_FILE NO
+    setenv GENERATE_PROFILING_CODE NO
+    setenv GID 20
+    setenv GROUP staff
+    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES
+    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES
+    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES
+    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES
+    setenv HEADER_SEARCH_PATHS "\"/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/include\" "
+    setenv ICONV /usr/bin/iconv
+    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES
+    setenv INFOPLIST_FILE Info.plist
+    setenv INFOPLIST_OUTPUT_FORMAT same-as-input
+    setenv INFOPLIST_PATH nForceLAN.kext/Contents/Info.plist
+    setenv INFOPLIST_PREPROCESS NO
+    setenv INFOSTRINGS_PATH /InfoPlist.strings
+    setenv INSTALL_DIR /tmp/nForceLAN.dst/System/Library/Extensions
+    setenv INSTALL_GROUP staff
+    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX
+    setenv INSTALL_OWNER hjelmn
+    setenv INSTALL_PATH /System/Library/Extensions
+    setenv INSTALL_ROOT /tmp/nForceLAN.dst
+    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"
+    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub
+    setenv JAVA_ARCHIVE_CLASSES YES
+    setenv JAVA_ARCHIVE_TYPE JAR
+    setenv JAVA_COMPILER /usr/bin/javac
+    setenv JAVA_FOLDER_PATH nForceLAN.kext/Contents/Resources/Java
+    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources
+    setenv JAVA_JAR_FLAGS cv
+    setenv JAVA_SOURCE_SUBDIR .
+    setenv JAVA_USE_DEPENDENCIES YES
+    setenv JAVA_ZIP_FLAGS -urg
+    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"
+    setenv KEEP_PRIVATE_EXTERNS NO
+    setenv KERNEL_EXTENSION_HEADER_SEARCH_PATHS "/System/Library/Frameworks/Kernel.framework/PrivateHeaders /System/Library/Frameworks/Kernel.framework/Headers"
+    setenv KERNEL_FRAMEWORK /System/Library/Frameworks/Kernel.framework
+    setenv KERNEL_FRAMEWORK_HEADERS /System/Library/Frameworks/Kernel.framework/Headers
+    setenv KEXT_FAMILY_NAME family
+    setenv KEXT_FRAMEWORK /System/Library/Frameworks/Kernel.framework
+    setenv KEXT_FRAMEWORK_NAME Kernel
+    setenv LD_GENERATE_MAP_FILE NO
+    setenv LD_MAP_FILE_PATH /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/nForceLAN-LinkMap-normal-x86_64.txt
+    setenv LD_OPENMP_FLAGS -fopenmp
+    setenv LEX /Developer/usr/bin/lex
+    setenv LIBRARY_FLAG_NOSPACE YES
+    setenv LIBRARY_FLAG_PREFIX -l
+    setenv LIBRARY_SEARCH_PATHS "\"/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release\" "
+    setenv LINKER_DISPLAYS_MANGLED_NAMES NO
+    setenv LINK_FILE_LIST_normal_i386 /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/i386/nForceLAN.LinkFileList
+    setenv LINK_FILE_LIST_normal_x86_64 /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal/x86_64/nForceLAN.LinkFileList
+    setenv LINK_WITH_STANDARD_LIBRARIES YES
+    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities
+    setenv LOCAL_APPS_DIR /Applications
+    setenv LOCAL_DEVELOPER_DIR /Library/Developer
+    setenv LOCAL_LIBRARY_DIR /Library
+    setenv MACH_O_TYPE mh_execute
+    setenv MACOSX_DEPLOYMENT_TARGET 10.6
+    setenv MAC_OS_X_VERSION_ACTUAL 1060
+    setenv MAC_OS_X_VERSION_MAJOR 1060
+    setenv MAC_OS_X_VERSION_MINOR 0600
+    setenv MODULE_NAME com.nvidia.driver.nForceLAN
+    setenv MODULE_START 0
+    setenv MODULE_STOP 0
+    setenv MODULE_VERSION 0.62.14
+    setenv NATIVE_ARCH i386
+    setenv NATIVE_ARCH_32_BIT i386
+    setenv NATIVE_ARCH_64_BIT x86_64
+    setenv NATIVE_ARCH_ACTUAL x86_64
+    setenv NO_COMMON YES
+    setenv OBJECT_FILE_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects
+    setenv OBJECT_FILE_DIR_normal /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Objects-normal
+    setenv OBJROOT /Users/hjelmn/Desktop/nForceLAN_0.62.13/build
+    setenv ONLY_ACTIVE_ARCH NO
+    setenv OPTIMIZATION_LEVEL 0
+    setenv OS MACOS
+    setenv OSAC /usr/bin/osacompile
+    setenv PACKAGE_TYPE com.apple.package-type.wrapper.kernel-extension
+    setenv PASCAL_STRINGS YES
+    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"
+    setenv PBDEVELOPMENTPLIST_PATH nForceLAN.kext/Contents/pbdevelopment.plist
+    setenv PFE_FILE_C_DIALECTS c++
+    setenv PKGINFO_FILE_PATH /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/PkgInfo
+    setenv PKGINFO_PATH nForceLAN.kext/Contents/PkgInfo
+    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications
+    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin
+    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library
+    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs
+    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools
+    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr
+    setenv PLATFORM_NAME macosx
+    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input
+    setenv PLUGINS_FOLDER_PATH nForceLAN.kext/Contents/PlugIns
+    setenv PREBINDING NO
+    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES
+    setenv PRECOMP_DESTINATION_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/PrefixHeaders
+    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO
+    setenv PRIVATE_HEADERS_FOLDER_PATH /System/Library/Frameworks/Kernel.framework/Contents/PrivateHeaders/family
+    setenv PRODUCT_NAME nForceLAN
+    setenv PRODUCT_SETTINGS_PATH /Users/hjelmn/Desktop/nForceLAN_0.62.13/Info.plist
+    setenv PRODUCT_SPECIFIC_LDFLAGS -lcpp_kext
+    setenv PRODUCT_TYPE com.apple.product-type.kernel-extension.iokit
+    setenv PRODUCT_TYPE_HEADER_SEARCH_PATHS "/System/Library/Frameworks/Kernel.framework/PrivateHeaders /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Kernel.framework/Headers"
+    setenv PROFILING_CODE NO
+    setenv PROJECT nForceLAN
+    setenv PROJECT_DERIVED_FILE_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/DerivedSources
+    setenv PROJECT_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv PROJECT_FILE_PATH /Users/hjelmn/Desktop/nForceLAN_0.62.13/nForceLAN.xcodeproj
+    setenv PROJECT_NAME nForceLAN
+    setenv PROJECT_TEMP_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build
+    setenv PUBLIC_HEADERS_FOLDER_PATH /System/Library/Frameworks/Kernel.framework/Contents/Headers/family
+    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES
+    setenv REMOVE_CVS_FROM_RESOURCES YES
+    setenv REMOVE_SVN_FROM_RESOURCES YES
+    setenv REZ_COLLECTOR_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/ResourceManagerResources
+    setenv REZ_OBJECTS_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/ResourceManagerResources/Objects
+    setenv REZ_SEARCH_PATHS "\"/Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release\" "
+    setenv RUN_CLANG_STATIC_ANALYZER NO
+    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO
+    setenv SCRIPTS_FOLDER_PATH nForceLAN.kext/Contents/Resources/Scripts
+    setenv SCRIPT_INPUT_FILE_COUNT 0
+    setenv SCRIPT_OUTPUT_FILE_COUNT 0
+    setenv SDKROOT /Developer/SDKs/MacOSX10.6.sdk
+    setenv SDK_DIR /Developer/SDKs/MacOSX10.6.sdk
+    setenv SDK_NAME macosx10.6
+    setenv SED /usr/bin/sed
+    setenv SEPARATE_STRIP NO
+    setenv SEPARATE_SYMBOL_EDIT NO
+    setenv SET_DIR_MODE_OWNER_GROUP YES
+    setenv SET_FILE_MODE_OWNER_GROUP NO
+    setenv SHARED_DERIVED_FILE_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/DerivedSources
+    setenv SHARED_FRAMEWORKS_FOLDER_PATH nForceLAN.kext/Contents/SharedFrameworks
+    setenv SHARED_PRECOMPS_DIR /var/folders/+9/+98P9C3aGOy4hASUXQFZ-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders
+    setenv SHARED_SUPPORT_FOLDER_PATH nForceLAN.kext/Contents/SharedSupport
+    setenv SKIP_INSTALL NO
+    setenv SOURCE_ROOT /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv SRCROOT /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic
+    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16
+    setenv STRIP_INSTALLED_PRODUCT YES
+    setenv STRIP_STYLE debugging
+    setenv SYMBOL_REPOSITORY_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/SymbolRepositories
+    setenv SYMROOT /Users/hjelmn/Desktop/nForceLAN_0.62.13/build
+    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities
+    setenv SYSTEM_APPS_DIR /Applications
+    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices
+    setenv SYSTEM_DEMOS_DIR /Applications/Extras
+    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications
+    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin
+    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"
+    setenv SYSTEM_DEVELOPER_DIR /Developer
+    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"
+    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"
+    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"
+    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"
+    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"
+    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools
+    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"
+    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"
+    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr
+    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities
+    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation
+    setenv SYSTEM_LIBRARY_DIR /System/Library
+    setenv TARGETNAME nForceLAN
+    setenv TARGET_BUILD_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release
+    setenv TARGET_NAME nForceLAN
+    setenv TARGET_TEMP_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build
+    setenv TEMP_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build
+    setenv TEMP_FILES_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build
+    setenv TEMP_FILE_DIR /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build
+    setenv TEMP_ROOT /Users/hjelmn/Desktop/nForceLAN_0.62.13/build
+    setenv UID 501
+    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH nForceLAN.kext/Contents/Resources
+    setenv UNSTRIPPED_PRODUCT NO
+    setenv USER hjelmn
+    setenv USER_APPS_DIR /Users/hjelmn/Applications
+    setenv USER_LIBRARY_DIR /Users/hjelmn/Library
+    setenv USE_DYNAMIC_NO_PIC YES
+    setenv USE_HEADERMAP YES
+    setenv USE_HEADER_SYMLINKS NO
+    setenv VALID_ARCHS "i386 x86_64"
+    setenv VERBOSE_PBXCP NO
+    setenv VERSIONPLIST_PATH nForceLAN.kext/Contents/version.plist
+    setenv VERSION_INFO_BUILDER hjelmn
+    setenv VERSION_INFO_FILE nForceLAN_vers.c
+    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:nForceLAN  PROJECT:nForceLAN-0.62.14\""
+    setenv WRAPPER_EXTENSION kext
+    setenv WRAPPER_NAME nForceLAN.kext
+    setenv WRAPPER_SUFFIX .kext
+    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode
+    setenv XCODE_VERSION_ACTUAL 0320
+    setenv XCODE_VERSION_MAJOR 0300
+    setenv XCODE_VERSION_MINOR 0320
+    setenv YACC /Developer/usr/bin/yacc
+    /bin/sh -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/nForceLAN.build/Release/nForceLAN.build/Script-63F711E709D62B9900BF76F1.sh
+
+Touch build/Release/nForceLAN.kext
+    cd /Users/hjelmn/Desktop/nForceLAN_0.62.13
+    /usr/bin/touch -c /Users/hjelmn/Desktop/nForceLAN_0.62.13/build/Release/nForceLAN.kext
+
+** BUILD SUCCEEDED **
+
