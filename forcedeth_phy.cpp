@@ -130,9 +130,9 @@ int nForceLAN::phyInit (void) {
           break;
       }
       if (_phyModel == PHY_MODEL_REALTEK_8211 && _phyRev == PHY_REV_REALTEK_8211C) {
-        UInt32 powerstate = readRegister (NvRegPowerState2);
         
         if (0) {
+          UInt32 powerstate = readRegister (NvRegPowerState2);
           /* need to perform hw phy reset */
           powerstate |= NVREG_POWERSTATE2_PHY_RESET;
           writeRegister (NvRegPowerState2, powerstate);

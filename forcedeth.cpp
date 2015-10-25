@@ -250,7 +250,6 @@ bool nForceLAN::start (IOService *provider) {
 }
 
 IOReturn nForceLAN::enable(IONetworkInterface *interface) {
-  bool ret;
   UInt32 i, low;
 	
   if (_ifEnabled || _inEnable)
@@ -393,15 +392,13 @@ IOReturn nForceLAN::enable(IONetworkInterface *interface) {
     writeRegister(NvRegMulticastMaskB, NVREG_MCASTMASKB_NONE);
     writeRegister(NvRegPacketFilterFlags, NVREG_PFF_ALWAYS | NVREG_PFF_MYADDR);
 		
-    {
-      UInt32 miistat;
-      miistat = readRegister(NvRegMIIStatus);
-      writeRegister(NvRegMIIStatus, NVREG_MIISTAT_MASK_ALL);
-    }
+    UInt32 miistat;
+    miistat = readRegister(NvRegMIIStatus);
+    writeRegister(NvRegMIIStatus, NVREG_MIISTAT_MASK_ALL);
     
-    NVLOG_DEBUG (1, "starting transmit/receive engines\n");
+    NVLOG_DEBUG (1, "starting transmit/receive engines. MII Status: %x\n", miistat);
     _linkspeed = 0;
-    ret = updateLinkSpeed();
+    (void) updateLinkSpeed();
     startRxTx();
     
 #if 0
@@ -1007,17 +1004,18 @@ bool nForceLAN::getMACAddressFromHardware (void) {
       
       /* MAC address needs to be consistent on each boot so use data from the IORegistry to generate the pseudo-random MAC. */
       acpiPath = (OSString *)_device->getProperty ("acpi-path");
-      if (acpiPath)
+      if (acpiPath) {
         NVLOG_DEBUG (0, "acpi-path: %s, length = %lu\n", acpiPath->getCStringNoCopy (), strlen (acpiPath->getCStringNoCopy ()));
       
-      deviceSignature = crc32 (crc32 (0, NULL, 0), acpiPath->getCStringNoCopy (), strlen (acpiPath->getCStringNoCopy ()));
-      deviceSignature += _vendorID + _deviceID;
+        deviceSignature = crc32 (crc32 (0, NULL, 0), acpiPath->getCStringNoCopy (), strlen (acpiPath->getCStringNoCopy ()));
+        deviceSignature += _vendorID + _deviceID;
       
-      NVLOG_DEBUG (0, "device signature: %08x\n", deviceSignature);
+        NVLOG_DEBUG (0, "device signature: %08x\n", deviceSignature);
       
-      /* Use the first and last byte in the MAC */
-      _macAddr.bytes[4] = deviceSignature & 0xff;
-      _macAddr.bytes[5] = deviceSignature >> 24;
+        /* Use the first and last byte in the MAC */
+        _macAddr.bytes[4] = deviceSignature & 0xff;
+        _macAddr.bytes[5] = deviceSignature >> 24;
+      }
     }
   }
 

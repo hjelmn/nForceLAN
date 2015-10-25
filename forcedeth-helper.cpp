@@ -189,13 +189,13 @@ void nForceLAN::updatePause (UInt32 pause_flags) {
 
 bool nForceLAN::updateLinkSpeed (void) {
 	int miiStatus;
-	int adv, lpa;
-	int newls = _linkspeed;
-	bool newdup = _duplex;
+	int adv = 0, lpa;
+	int newls;
+	bool newdup;
 	bool retval;
-	int txrx_flags;
-	int speed;
-	IOMediumType type;
+	int txrx_flags = 0;
+	int speed = 0;
+	IOMediumType type = kIOMediumEthernetNone;
 
 	UInt32 controlGigabit, statusGigabit, phyReg, txreg, adv_pause, pause_flags, phy_exp, lpa_pause;
 	
